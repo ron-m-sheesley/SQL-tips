@@ -1,0 +1,1 @@
+select distinct (c1cmpy || ' - ' || ifnull(B0cnme, 'Name not found')) as CompanyName from cams.cip010a A left join cams.bip001 B on c1cmpy = b0cmpy where c1act='Y' ;

@@ -16,3 +16,6 @@ Insert Into CAMS.sip010ext (E1SGRP, E1SLS#, E1EVPID, E1SRVPID, E1DVPID, E1RLVPID
  		s1grp#=grgp21 or s1grp#=grgp22 or s1grp#=grgp23 or s1grp#=grgp24 or s1grp#=grgp25 or s1grp#=grgp26 or s1grp#=grgp27 or s1grp#=grgp28 or s1grp#=grgp29 or s1grp#=grgp30
  
 	Where s1terr='TER' and s1act = 'A' ;
+	
+--  Insert & Update a row when SELECTing from another file
+Insert Into RONS.CIP010O (colA, colB, colC) Select colA, 'DS', colC  From CAMS.CIP010O Where COACTIVE='Y' and CODFTMKTS='DN';

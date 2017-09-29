@@ -1,0 +1,7 @@
+ -- Reset Identity column in SQL Server
+ 
+ declare @max int
+ select @max=max(ProductId)from ProductMaster
+ if @max IS NUll
+   SET @max = 0
+DBCC CHECKIDENT ('ProductMaster', RESEED,@max)

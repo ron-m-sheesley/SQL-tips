@@ -1,0 +1,5 @@
+ -- From SQL Server
+ 
+ select MAX(o1ord#) from [L2].[LukeDev].[CAMS].[OPP010]					don't really need the brackets
+ EXEC ('{CALL lukedev.cams.sp_OrderDetails(?, ?)}', '500600', 'TEST') AT L2		calling an iSeries stored procedure
+ select dbo.fnConvertProductType('T', 'US', 'CarpetTile') As MyType			calling a function

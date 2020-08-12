@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>GitHub Test 2</title>
+<title>GitHub Test 3</title>
 </head>
 
 <body>
